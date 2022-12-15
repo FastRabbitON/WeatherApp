@@ -1,0 +1,257 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'montseratt' ,sans-serif;
+}
+
+.app{
+  width: 100vw;
+  height: 100vh;
+  padding: 25px;
+}
+
+.backgroundCold, .backgroundMid, .backgroundHeat{
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover/center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+  transition: all 0.5s ease-in-out
+}
+
+.backgroundMid{
+  background-image: url(./assets/BackgroundMid.jpg);
+  filter: brightness(80%);
+}
+
+.backgroundCold{
+  background-image: url(./assets/BackgroundCold.jpg);
+  filter: brightness(60%);
+}
+
+.backgroundHeat{
+  background-image: url(./assets/BackgroundHeat.jpg);
+  filter: brightness(55%);
+}
+
+
+.search-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+  width: 80%;
+  margin: 0 auto 10px;
+}
+
+.search-container .search-bar{
+  display: block;
+  width: 100%;
+  padding: 5px 8px;
+  color: white;
+  text-transform: capitalize;
+  font-size: 15px;
+
+  outline: none;
+  border: none;
+  appearance: none;
+
+  background: rgba(255, 255, 255, 0);
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(1.3px);
+  -webkit-backdrop-filter: blur(1.3px);
+  border: 0.8px solid rgba(255, 255, 255, 0.3);
+
+  transition: all 0.2s ease-in-out;
+}
+
+.search-container .search-bar:focus{
+  background: rgba(0, 0, 0, 0.2);
+  border: 0.8px solid rgba(255, 255, 255, 1);
+  transition: all 0.3s ease-in-out;
+}
+
+.search-container .search-bar::placeholder{
+  color: white;
+}
+
+.content-container{
+  display: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.content-container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: fit-content;
+  transition: all 0.3s ease-in-out;
+}
+
+.map{
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  z-index: 2;
+}
+
+.geolocal{
+  margin: 0 auto 30px;
+  font-size: 15px;
+  color: white; 
+}
+
+.location-container{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: fit-content;
+  margin-bottom: 80px;
+  color: white;
+  line-height: 20px;
+  font-size: 20px;
+  /* background-color: aqua; */
+
+
+}
+
+.location-container :first-child{
+  font-size: 35px;
+  line-height: 50px;
+
+}
+
+.location-container .location, .date{
+  margin-left: 10vh;
+}
+
+.temp{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 80px;
+  font-weight: 600;
+  margin: 0 auto 100px;
+  color: white;
+  height: fit-content;
+  width: fit-content;
+  padding: 10px;
+
+  transition: all 0.5s ease-in-out;
+
+  background: rgba(0, 0, 0, 0.49);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.6px);
+  -webkit-backdrop-filter: blur(6.6px);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.more-information{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  color: white;
+  height: fit-content;
+  width: 50vw;
+  padding: 5px 25px;
+  margin: 0 auto 0;
+
+
+  background: rgba(0, 0, 0, 0.49);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.6px);
+  -webkit-backdrop-filter: blur(6.6px);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.more-information .title{
+  font-weight: 600;
+}
+
+
+
+@media only screen and (max-width: 750px) {
+  .more-information{
+    width: 70vw;
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+  .more-information{
+    width: 90vw;
+  }
+
+  .location-container{
+    justify-content: center;
+    align-items: center;
+  }
+
+  .location-container .location, .date{
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  
+  .location-container{
+    margin-bottom: 50px;
+  }
+
+
+  .temp{
+    font-size: 60px;
+    margin-bottom: 50px;
+  }
+
+  .more-information{
+    flex-direction: column;
+    width: fit-content;
+    height: 200px;
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+
+  .temp{
+    font-size: 40px;
+  }
+
+}
+
+
+@media only screen and (max-height: 600px) and (max-width: 600px){
+
+  .geolocal{
+    margin-bottom: 10px;
+  }
+
+  .location-container{
+    margin-bottom: 30px;
+  }
+
+
+  .temp{
+    font-size: 60px;
+    margin-bottom: 20px;
+  }
+
+
+}
