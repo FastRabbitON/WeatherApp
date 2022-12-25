@@ -17,6 +17,7 @@ Simple React weather app. During make this project I learned how works React Hoo
 - React
 
 ## How to run
+Online [here](https://srv49151.seohost.com.pl/Projects/WeatherAppCompiled/index.html) or:
  1. Download the entire repository
  2. Unzip in a folder
  3. Open folder by Visual Studio Code (or another code editor)
