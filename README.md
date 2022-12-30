@@ -30,7 +30,7 @@ Online [here](https://srv49151.seohost.com.pl/Projects/WeatherAppCompiled/index.
 2. Unzip in a folder
 3. Open folder by Visual Studio Code (or another code editor)
 4. Open console
-5. Start with command `-- npm start`
+5. Start with command `npm start`
 
 
 ## Project Status
