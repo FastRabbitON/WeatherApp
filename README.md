@@ -1,5 +1,4 @@
 # Weather App ⛅️
-https://srv49151.seohost.com.pl/Projects/WeatherAppCompiled/index.html
 
 ## Table of Contents
 * [General Information](#general-information)
@@ -11,6 +10,8 @@ https://srv49151.seohost.com.pl/Projects/WeatherAppCompiled/index.html
 ## General Information
 Simple React weather app. During make this project I learned how works React Hooks and how to get API data by Fetch. 
 
+![Alt text](https://github.com/FastRabbitON/FastRabbitON/blob/main/GifWeather.gif)
+
 ## Technologies Used
 - HTML
 - CSS
@@ -18,9 +19,6 @@ Simple React weather app. During make this project I learned how works React Hoo
 - React
 
 ## How to run
-Online [here](https://srv49151.seohost.com.pl/Projects/WeatherAppCompiled/index.html) or:
-
-- Compiled version:
 1. Download [WeatherAppCompiled](https://github.com/FastRabbitON/WeatherApp/tree/main/WeatherAppCompiled ) files
 2. Unzip in a folder
 3. Run by open  **index.html**  file
