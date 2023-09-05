@@ -1,5 +1,7 @@
 # Weather App ⛅️
 
+Check out project online [HERE!](https://fastrabbiton.pl/weather)
+
 ## Table of Contents
 * [General Information](#general-information)
 * [Technologies Used](#technologies-used)
@@ -10,7 +12,7 @@
 ## General Information
 Simple React weather app. During make this project I learned how works React Hooks and how to get API data by Fetch. 
 
-![Alt text](https://github.com/FastRabbitON/FastRabbitON/blob/main/GifWeather.gif)
+![GifWeather](https://github.com/FastRabbitON/FastRabbitON/blob/main/GifWeather.gif)
 
 ## Technologies Used
 - HTML
@@ -35,7 +37,7 @@ Simple React weather app. During make this project I learned how works React Hoo
 The website app is complited.
 
 ## Contact
-https://srv49151.seohost.com.pl
+https://fastrabbiton.pl/
 
 https://github.com/FastRabbitON \
 fastrabbiton@gmail.com
